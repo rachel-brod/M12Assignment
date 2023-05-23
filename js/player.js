@@ -67,7 +67,8 @@ playBtn.addEventListener('click', e => {
                 albums[1].play()
             } else if (id === 'song_2') {
                 albums[2].play()
-            }
+            } else {
+                break
         }
     }
 })
@@ -76,7 +77,7 @@ playBtn.addEventListener('click', e => {
 let favoriteAlbumBtn = document.getElementById("favoriteAlbum");
 favoriteAlbumBtn.addEventListener('click', e => {
     if (e.target.tagName == 'BUTTON') {
-        
-        console.log(`Your favorite album is: ${jbox.favoriteAlbum()}`)
+         
+        alert(`Your favorite album is: ${jbox.favoriteAlbum()}`)
     }
 })
