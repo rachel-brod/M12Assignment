@@ -67,7 +67,8 @@ playBtn.addEventListener('click', e => {
                 albums[1].play()
             } else if (id === 'song_2') {
                 albums[2].play()
-            }
+            } else {
+                break
         }
     }
 })
